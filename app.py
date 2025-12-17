@@ -1,8 +1,13 @@
+import os
 import json
 import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
+
+# Sembunyikan log INFO/WARNING TensorFlow di console
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
 import tensorflow as tf
 
 # =========================================
